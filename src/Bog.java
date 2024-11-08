@@ -8,6 +8,13 @@ public class Bog {
     public Bog()
     {}
 
+    public Bog(String g, String t, int aarsT)
+    {
+        genre = g;
+        titel = t;
+        aarstal = aarsT;
+    }
+
     public String getGenre()
     {
       return genre;

@@ -8,14 +8,27 @@ public class Eksemplar {
     public Eksemplar()
     {}
 
-    public int udgivelsesAar()
+
+    public Eksemplar(int udAar, int antalE, int stregK)
+    {
+        udgivelsesAar = udAar;
+        antalEksemplar = antalE;
+        stregKode = stregK;
+    }
+
+    public int getudgivelsesAar()
     {
         return udgivelsesAar;
     }
 
+    public int getAntalEksemplar()
+    {
+        return antalEksemplar;
+    }
 
-
-
-
+    public int getStregKode()
+    {
+        return stregKode;
+    }
 
 }

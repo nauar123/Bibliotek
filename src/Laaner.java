@@ -10,6 +10,14 @@ public class Laaner {
     public  Laaner()
     {}
 
+    public Laaner(int lId, String lNavn, String m, int tNr)
+    {
+        laanerId = lId;
+        laanerNavn = lNavn;
+        mail = m;
+        telefonNr = tNr;
+    }
+
     public int getLaanerId()
     {
         return laanerId;
@@ -19,17 +27,12 @@ public class Laaner {
         return laanerNavn;
     }
 
-    public String getMail;
-    {
-        return mail;
-    }
+    public String getMail()
+   {
+       return mail;
+   }
     public  int getTelefonNr()
     {
         return telefonNr;
     }
-
-
-
-
-
 }

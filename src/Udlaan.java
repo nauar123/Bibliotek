@@ -7,6 +7,11 @@ public class Udlaan {
 
     public Udlaan()
     {}
+    public Udlaan(int maxUd, int ud)
+    {
+        maxUdlaan = maxUd;
+        udlaan = ud;
+    }
 
     public int getMaxUdlaan()
     {

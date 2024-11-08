@@ -6,6 +6,12 @@ public class Bibliotek {
 
     public Bibliotek()
     {}
+    public Bibliotek(String bNavn,String ad, String k)
+    {
+        bibliotekNavn = bNavn;
+        adresse = ad;
+        kommune = k;
+    }
 
     public String getBibliotekNavn()
     {
