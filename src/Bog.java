@@ -1,32 +1,38 @@
+import java.util.ArrayList;
+
 public class Bog {
 
 
-    private String genre;
+
     private String titel;
-    private int aarstal;
+    private Forfatter forfatter;
+    private int udgivelsesAar;
 
     public Bog()
     {}
 
-    public Bog(String g, String t, int aarsT)
-    {
-        genre = g;
-        titel = t;
-        aarstal = aarsT;
-    }
 
-    public String getGenre()
+    public Bog(String ti, Forfatter f, int u)
     {
-      return genre;
+        titel = ti;
+        forfatter = f;
+        udgivelsesAar = u;
     }
 
     public String getTitel()
     {
-        return titel;
+      return titel;
     }
 
-    public int getAarstal()
+    public Forfatter getForfatter()
     {
-        return aarstal;
+        return forfatter;
     }
+
+    public int getUdgivelsesAar()
+    {
+        return udgivelsesAar;
+    }
+
+
 }

@@ -1,18 +1,15 @@
 public class Main {
     public static void main(String[] args) {
 
+        Forfatter mah = new Forfatter("Martin A. Hansen", "Dansk");
+        Bog loegneren = new Bog("Løgneren",mah,1950);
+        Eksemplar l1 = new Eksemplar(loegneren,123456);
 
-        Eksemplar eksemplar = new Eksemplar(); // man skal skrive eksemplar og ikke Eksemplar nedenunder. Ellers får man problemer med static og non static.
-        // Eksemplar er nemlig en klasse og er static.
+        Laaner poul = new Laaner("Poul Thorsen", "Hirtshals", "pt@gmail.com",new CprNr("1206522129"));
+        Udlaan u1 = new Udlaan(poul, l1, new Dato(20241108));
 
-        eksemplar.getudgivelsesAar();
-        eksemplar.getudgivelsesAar();
-        eksemplar.getStregKode();
-
-
-
+        System.out.println("Forfatter til udlån: "+u1.getEksemplar().getBog().getForfatter().getNavn());
 
 
-
-        }
+    }
     }

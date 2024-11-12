@@ -1,26 +1,34 @@
 public class Udlaan {
 
-
-    private int maxUdlaan;
-    private int udlaan = 0;
+    private Laaner laaner;
+    private Eksemplar eksemplar;
+    private Dato udlaansDato;
 
 
     public Udlaan()
     {}
-    public Udlaan(int maxUd, int ud)
+    public Udlaan(Laaner l, Eksemplar e, Dato u)
     {
-        maxUdlaan = maxUd;
-        udlaan = ud;
+        laaner = l;
+        eksemplar = e;
+        udlaansDato = u;
+
     }
 
-    public int getMaxUdlaan()
+
+    public Laaner getLaaner()
     {
-        return maxUdlaan;
+        return laaner;
     }
 
-    public int getUdlaan()
+    public Eksemplar getEksemplar()
     {
-        return udlaan;
+        return eksemplar;
+    }
+
+    public Dato getUdlaansDato()
+    {
+        return udlaansDato;
     }
 }
 

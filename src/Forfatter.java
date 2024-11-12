@@ -1,34 +1,19 @@
-public class Forfatter {
+public class Forfatter extends Person {
 
-    private String forfatterNavn;
-    private String forlag;
-    private String nationalitet;
-    private int foedeAar;
-    private int doedeAar;
-
-
+    protected String nationalitet;
 
     public Forfatter()
     {}
-    public Forfatter(String forfatterNavn, String forlag, String nationalitet, int foedeAar, int doedeAar)
+    public Forfatter( String navn, String nationalitet)
     {
-        this.forfatterNavn = forfatterNavn;
-        this.forlag = forlag;
+        super(navn);
         this.nationalitet = nationalitet;
-        this.foedeAar = foedeAar;
-        this.doedeAar = doedeAar;
 
     }
 
-    public String getForfatterNavn()
+    public String getNationalitet()
     {
-        return forfatterNavn;
+        return nationalitet;
     }
-
-    public String getForlag()
-    {
-        return forlag;
-    }
-
 
 }

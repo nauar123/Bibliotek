@@ -1,38 +1,35 @@
-public class Laaner {
+public class Laaner extends Person{
 
 
-    private int laanerId;
-    private String laanerNavn;
-    private String mail;
-    private int telefonNr;
+    protected String adresse;
+    protected String mail;
+    protected CprNr cprnr;
 
 
     public  Laaner()
     {}
 
-    public Laaner(int lId, String lNavn, String m, int tNr)
+    public Laaner( String navn, String adresse, String mail, CprNr cprnr)
     {
-        laanerId = lId;
-        laanerNavn = lNavn;
-        mail = m;
-        telefonNr = tNr;
+        super(navn);
+        this.adresse = adresse;
+        this.mail = mail;
+        this.cprnr = cprnr;
+
     }
 
-    public int getLaanerId()
+    public String getAdresse()
     {
-        return laanerId;
-    }
-    public String getLaanerNavn()
-    {
-        return laanerNavn;
+        return adresse;
     }
 
     public String getMail()
    {
        return mail;
    }
-    public  int getTelefonNr()
+
+    public CprNr getCprnr()
     {
-        return telefonNr;
+        return cprnr;
     }
 }

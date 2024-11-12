@@ -1,31 +1,24 @@
 public class Eksemplar {
 
 
-    private int udgivelsesAar;
-    private int antalEksemplar = 0;
+    private Bog bog;
     private int stregKode;
 
     public Eksemplar()
     {}
 
 
-    public Eksemplar(int udAar, int antalE, int stregK)
+    public Eksemplar( Bog b, int stregK)
     {
-        udgivelsesAar = udAar;
-        antalEksemplar = antalE;
+        bog = b;
         stregKode = stregK;
     }
 
-    public int getudgivelsesAar()
-    {
-        return udgivelsesAar;
-    }
 
-    public int getAntalEksemplar()
+    public Bog getBog()
     {
-        return antalEksemplar;
+        return bog;
     }
-
     public int getStregKode()
     {
         return stregKode;
